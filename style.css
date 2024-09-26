@@ -1,0 +1,839 @@
+:root {
+  --kuning: rgb(252, 222, 112);
+  --orange: #ffa62f;
+  --abu: rgb(245, 247, 248);
+  --coklat: rgb(197 141 59);
+}
+
+* {
+  text-decoration: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(245, 247, 248);
+  /* min-height: 300rem; */
+}
+
+nav {
+  background-color: var(--orange);
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  position: fixed;
+}
+
+nav .kotak-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 1rem 7% 1rem;
+  color: var(--abu);
+}
+
+nav .logo {
+  flex: 1;
+}
+
+nav .logo a {
+  font-size: 2rem;
+  color: white;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+  text-shadow: 1px 6px 1px rgba(0, 0, 0, 0.6);
+}
+
+nav .kotak-nava {
+  flex: 2;
+}
+
+nav .kotak-nava a {
+  color: rgb(245, 247, 248);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin: 0 3rem;
+}
+
+nav .kotak-nava a:hover {
+  text-shadow: 0 0 10px #ffe469, 0 0 20px #ffe469, 0 0 40px #fdec00;
+  color: #fff;
+}
+
+nav .kotak-nav .kotak-burgermenu svg {
+  color: rgb(245, 247, 248);
+  display: none;
+}
+
+nav .kotak-nav .kotak-burgermenu svg:hover {
+  text-shadow: 0 0 10px #ffa569, 0 0 20px #ffa569, 0 0 40px #ffa569;
+  color: #fff;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--kuning);
+}
+
+header .hero-gambar {
+  width: 26rem;
+}
+
+header .hero-judul h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  letter-spacing: 0.3rem;
+  color: var(--orange);
+  text-shadow: 1px 1px 1px black;
+}
+
+header .hero-judul p {
+  font-size: 1.8rem;
+  font-weight: 200;
+  letter-spacing: 0.1rem;
+  color: var(--coklat);
+}
+header .hero-judul .cta {
+  margin-top: 1rem;
+  font-size: 2rem;
+  background-color: var(--orange);
+  border-radius: 2rem;
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+header .hero-judul .cta a {
+  color: #fff;
+}
+
+header .hero-judul .cta:hover {
+  background-color: #fcbd6b;
+}
+
+.menu-box {
+  min-height: 50vh;
+}
+
+.menu-box .menu-judul {
+  text-align: center;
+  background-color: var(--orange);
+  min-height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-box .menu-judul h1 {
+  font-size: 4rem;
+  text-shadow: 1px 5px 1px rgba(0, 0, 0, 0.5);
+  color: var(--abu);
+  text-transform: uppercase;
+}
+
+.menu-box .menu-boxisi {
+  padding: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: cornsilk;
+}
+
+.menu-box .menu-boxisi .menu-isi {
+  position: relative;
+  margin: 1rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 7px solid var(--kuning);
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.menu-box .menu-boxisi .menu-isi img {
+  width: 25rem;
+}
+
+.menu-box .menu-boxisi .menu-isip {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-box .menu-boxisi .menu-isip p {
+  font-size: 1.2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu-box .menu-boxisi .menu-isip:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.unggul-box {
+  min-height: 100vh;
+}
+
+.unggul-boxjudul {
+  display: flex;
+  min-height: 13vh;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--orange);
+}
+.unggul-boxjudul h1 {
+  font-size: 3rem;
+  color: var(--abu);
+  text-shadow: 1px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.unggul-box .unggul-boxisi {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--kuning);
+}
+
+.unggul-box .unggul-boxisi .unggul-boxg {
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.unggul-box .unggul-boxisi .unggul-boxg img {
+  width: 15rem;
+}
+
+.unggul-box .unggul-isi {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 23rem;
+  z-index: 3;
+}
+
+.unggul-box .unggul-isi h2 {
+  color: var(--orange);
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.8rem;
+  letter-spacing: -0.2rem;
+}
+
+.unggul-box .unggul-isi p {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 100;
+  color: var(--coklat);
+}
+
+.unggul-box .unggul-isi.satu {
+  top: 20%;
+  left: 13%;
+}
+.unggul-box .unggul-isi.dua {
+  top: 40%;
+  left: 68%;
+}
+.unggul-box .unggul-isi.tiga {
+  top: 60%;
+  left: 13%;
+}
+
+.unggul-box .unggul-boxisi .unggul-gambarisi {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+}
+.unggul-box .unggul-boxisi .unggul-gambarisi img {
+  width: 200rem;
+}
+
+.unggul-box .unggul-boxisi .unggul-gambarpanah img {
+  width: 10rem;
+}
+
+.unggul-box .unggul-boxisi .unggul-gambarpanah .panah1 {
+  top: 20%;
+  left: 34%;
+  position: absolute;
+  z-index: 4;
+}
+.unggul-box .unggul-boxisi .unggul-gambarpanah .panah2 {
+  top: 72%;
+  left: 30%;
+  position: absolute;
+  z-index: 4;
+}
+.unggul-box .unggul-boxisi .unggul-gambarpanah .panah3 {
+  top: 33%;
+  left: 60%;
+  position: absolute;
+  z-index: 4;
+}
+
+.pesan-box .pesan-boxjudul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--orange);
+  color: var(--abu);
+  min-height: 15vh;
+  text-shadow: 1px 1px 1px black;
+}
+
+.pesan-box .pesan-boxjudul h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-shadow: 1px 5px 1px rgba(0, 0, 0, 0.5);
+}
+.pesan-box .pesan-boxjudul h1 sup {
+  font-size: 1.5rem;
+}
+
+.pesan-box .pesan-boxisi {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: cornsilk;
+}
+
+.pesan-box .pesan-boxisi .pesan-boxisikotak {
+  margin: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 5px solid var(--kuning);
+  padding: 1rem;
+  width: 50rem;
+  height: 7rem;
+}
+
+.pesan-box .pesan-boxisi .pesan-boxisikotak2 {
+  margin: 1.5rem 0;
+  display: flex;
+  border: 5px solid var(--kuning);
+  width: 50rem;
+}
+
+.pesan-box .pesan-boxisi .pesan-boxisikotak2 iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.pesan-box .pesan-boxisi .pesan-boxisikotak .pesan-boxisigambar {
+  margin-right: 3rem;
+  width: 5rem;
+  height: 5rem;
+  border: 5px solid var(--kuning);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pesan-box .pesan-boxisi .pesan-boxisikotak .pesan-boxisigambar svg {
+  width: 3rem;
+  color: var(--coklat);
+}
+
+.pesan-box .pesan-boxisi .pesan-boxisikotak h1 {
+  margin-right: 2rem;
+  color: var(--coklat);
+}
+
+.pesan-box .pesan-boxisi .pesan-boxisikotak p {
+  color: var(--coklat);
+  text-align: center;
+  flex: 2;
+}
+
+.tentang-box .tentang-boxjudul {
+  display: flex;
+  min-height: 13vh;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--orange);
+}
+
+.tentang-box .tentang-boxjudul h1 {
+  font-size: 3rem;
+  color: var(--abu);
+  letter-spacing: 0.2rem;
+  text-shadow: 1px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.tentang-box .tentang-boxisi {
+  display: flex;
+  align-items: center;
+  min-height: 80vh;
+  padding: 1rem 7% 1rem;
+  background-color: var(--kuning);
+}
+
+.tentang-box .tentang-boxisi .tentang-boxisigambar {
+  flex: 1;
+  margin: 0 3rem;
+}
+
+.tentang-box .tentang-boxisi .tentang-boxisigambar img {
+  border: 15px solid var(--coklat);
+}
+
+.tentang-box .tentang-boxisi .tentang-boxisip {
+  width: 30rem;
+  flex: 2;
+  margin: 0 3rem;
+}
+
+.tentang-box .tentang-boxisi .tentang-boxisip h1 {
+  font-size: 3rem;
+  color: var(--coklat);
+  font-weight: 800;
+  text-shadow: 1px 3px 1px black;
+  padding-bottom: 1.5rem;
+  letter-spacing: 0.3rem;
+}
+
+.tentang-box .tentang-boxisi .tentang-boxisip p {
+  font-size: 1.3rem;
+  color: var(--coklat);
+  line-height: 3rem;
+  letter-spacing: 1px;
+}
+
+.memories-box {
+  background-color: cornsilk;
+}
+
+.memories-box .memories-boxisi {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 50vh;
+}
+
+.memories-box .memories-boxisi img {
+  width: 20rem;
+  border: 8px solid var(--kuning);
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 5vh;
+  background-color: var(--orange);
+}
+
+.footer p {
+  color: var(--abu);
+  font-weight: 900;
+}
+
+@media (max-width: 1500px) {
+  html {
+    font-size: 95%;
+  }
+  nav .kotak-nava {
+    flex: 3;
+  }
+
+  .menu-box .menu-boxisi .menu-isi {
+    position: relative;
+    margin: 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 7px solid var(--kuning);
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+  .menu-box .menu-boxisi .menu-isi img {
+    width: 20rem;
+  }
+  .menu-box .menu-judul {
+    min-height: 25vh;
+  }
+
+  .pesan-box .pesan-boxjudul {
+    min-height: 25vh;
+  }
+  .tentang-box .tentang-boxjudul {
+    min-height: 25vh;
+  }
+  .tentang-box .tentang-boxjudul h1 {
+    font-size: 4rem;
+  }
+
+  .unggul-box .unggul-boxisi .unggul-gambarpanah img {
+    width: 8rem;
+  }
+  .unggul-box .unggul-boxisi .unggul-gambarpanah .panah1 {
+    top: 12%;
+    left: 34%;
+  }
+  .unggul-box .unggul-boxisi .unggul-gambarpanah .panah2 {
+    top: 74%;
+    left: 34%;
+  }
+  .unggul-box .unggul-boxisi .unggul-gambarpanah .panah3 {
+    top: 33%;
+    left: 60%;
+  }
+  .unggul-box .unggul-isi.tiga {
+    top: 55%;
+    left: 13%;
+  }
+  .memories-box .memories-boxisi img {
+    width: 16rem;
+    border: 6px solid var(--kuning);
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 80%;
+  }
+  nav .kotak-nava {
+    flex: 2;
+  }
+  nav .kotak-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1rem 2% 1rem;
+    color: var(--abu);
+  }
+  nav {
+    height: 5rem;
+  }
+
+  .menu-box .menu-boxisi .menu-isip {
+    display: none;
+  }
+  .menu-box .menu-judul {
+    min-height: 12vh;
+  }
+  .unggul-box {
+    min-height: 50vh;
+  }
+  .unggul-box .unggul-boxisi {
+    min-height: 50vh;
+  }
+  .unggul-box .unggul-isi.satu {
+    top: 30%;
+    left: 5%;
+  }
+  .unggul-box .unggul-isi.dua {
+    top: 40%;
+    left: 68%;
+  }
+  .unggul-box .unggul-isi.tiga {
+    top: 60%;
+    left: 9%;
+  }
+
+  .unggul-box .unggul-boxisi .unggul-gambarisi {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+  }
+
+  .unggul-box .unggul-boxisi .unggul-gambarpanah img {
+    width: 10rem;
+  }
+
+  .unggul-box .unggul-boxisi .unggul-gambarpanah .panah1 {
+    top: 23%;
+    left: 28%;
+  }
+  .unggul-box .unggul-boxisi .unggul-gambarpanah .panah2 {
+    top: 75%;
+    left: 27%;
+  }
+  .unggul-box .unggul-boxisi .unggul-gambarpanah .panah3 {
+    top: 33%;
+    left: 60%;
+  }
+  .pesan-box .pesan-boxjudul {
+    min-height: 15vh;
+  }
+  .tentang-box .tentang-boxjudul {
+    min-height: 15vh;
+  }
+  .memories-box .memories-boxisi {
+    min-height: 30vh;
+  }
+}
+
+@media (max-width: 855px) {
+  html {
+    font-size: 75%;
+  }
+  nav .kotak-nava {
+    flex: 2;
+  }
+  nav .logo {
+    flex: 1;
+  }
+  nav .kotak-nava a {
+    margin: 0 1.5rem;
+  }
+
+  header,
+  hero-judul {
+    padding-left: 1rem;
+  }
+
+  .menu-box .menu-boxisi .menu-isi img {
+    width: 25rem;
+  }
+
+  .tentang-box .tentang-boxisi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+    padding: 1rem 7% 1rem;
+    background-color: var(--kuning);
+  }
+  .tentang-box .tentang-boxisi .tentang-boxisigambar {
+    flex: 1;
+    margin: 2rem 0;
+  }
+
+  .tentang-box .tentang-boxisi .tentang-boxisigambar img {
+    border: 15px solid var(--coklat);
+    height: 40rem;
+    width: 90rem;
+    object-fit: cover;
+  }
+
+  .tentang-box .tentang-boxisi .tentang-boxisip {
+    width: 100%;
+    flex: 1;
+    margin: 2rem 0;
+  }
+
+  .tentang-box .tentang-boxisi .tentang-boxisip h1 {
+    font-size: 3rem;
+  }
+
+  .tentang-box .tentang-boxisi .tentang-boxisip p {
+    font-size: 1.5rem;
+  }
+  .unggul-box .unggul-isi.dua {
+    top: 43%;
+    left: 64%;
+  }
+  .unggul-box .unggul-isi.tiga {
+    top: 60%;
+    left: 4%;
+  }
+
+  .memories-box .memories-boxisi {
+    flex-wrap: wrap;
+  }
+
+  .memories-box .memories-boxisi img {
+    width: 28rem;
+    border: 8px solid var(--kuning);
+    border-radius: 2rem;
+    overflow: hidden;
+    margin: 2rem;
+  }
+  header .hero-judul h1 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    letter-spacing: 0.3rem;
+    color: var(--orange);
+    text-shadow: 1px 1px 1px black;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 60%;
+  }
+  nav .kotak-nava {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    height: 100vh;
+    background-color: rgb(255, 166, 47, 0.8);
+    width: 25rem;
+    transition: 0.25s;
+    flex: 0;
+  }
+  nav .kotak-nava.active {
+    right: 0;
+  }
+  nav .kotak-nav .kotak-burgermenu svg {
+    display: inline-block;
+    margin-right: 2rem;
+  }
+  nav .kotak-nava a {
+    display: block;
+    font-size: 2.2rem;
+    margin: 5rem 1.5rem;
+  }
+  nav .logo {
+    flex: 1;
+  }
+  nav .logo a {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 900;
+    letter-spacing: 0.2rem;
+    text-shadow: 1px 4px 1px rgba(0, 0, 0, 0.6);
+    padding-left: 1rem;
+  }
+
+  header .hero-gambar {
+    width: 35rem;
+    position: absolute;
+    bottom: 10%;
+    right: 2%;
+  }
+  .hero-judul {
+    z-index: 3;
+  }
+
+  header .hero-judul h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    letter-spacing: 0.3rem;
+    margin: 1rem 0;
+    color: var(--orange);
+    text-shadow: 1px 1px 1px black;
+  }
+
+  header .hero-judul p {
+    font-size: 1.8rem;
+    font-weight: 200;
+    letter-spacing: 0.1rem;
+    color: var(--coklat);
+    margin: 1rem 0;
+  }
+  header .hero-judul .cta {
+    margin-top: 1rem;
+    font-size: 2rem;
+    background-color: var(--orange);
+    border-radius: 2rem;
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  .menu-box .menu-boxisi .menu-isi img {
+    width: 35rem;
+  }
+  .unggul-box .unggul-isi {
+    width: 15rem;
+  }
+  .unggul-box .unggul-isi h2 {
+    color: var(--orange);
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    padding-bottom: 0.5rem;
+  }
+  .unggul-box .unggul-isi p {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: var(--coklat);
+    line-height: 1.5rem;
+  }
+  .unggul-box .unggul-boxisi .unggul-boxg img {
+    padding-top: 5rem;
+    width: 20rem;
+  }
+  .unggul-box .unggul-boxisi .unggul-gambarisi img {
+    height: 36rem;
+  }
+  .unggul-box .unggul-boxisi .unggul-gambarpanah img {
+    width: 10rem;
+  }
+  .unggul-box .unggul-boxisi .unggul-gambarpanah .panah1 {
+    top: 18%;
+    left: 13%;
+  }
+  .unggul-box .unggul-boxisi .unggul-gambarpanah .panah2 {
+    top: 80%;
+    left: 15%;
+  }
+  .unggul-box .unggul-boxisi .unggul-gambarpanah .panah3 {
+    top: 30%;
+    left: 65%;
+  }
+  .unggul-box .unggul-isi.satu {
+    top: 26%;
+    left: 2%;
+  }
+  .unggul-box .unggul-isi.dua {
+    top: 40%;
+    left: 63%;
+  }
+  .unggul-box .unggul-isi.tiga {
+    top: 55%;
+    left: 2%;
+  }
+  .pesan-box .pesan-boxisi .pesan-boxisikotak {
+    margin: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 5px solid var(--kuning);
+    padding: 1rem;
+    width: 38rem;
+    height: 7rem;
+  }
+  .pesan-box .pesan-boxisi .pesan-boxisikotak2 {
+    position: relative;
+    width: 38rem;
+    flex: 1;
+  }
+  .pesan-box .pesan-boxisi .pesan-boxisikotak2 iframe {
+    position: absolute;
+  }
+
+  .memories-box .memories-boxisi img {
+    width: 35rem;
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 380px) {
+  html {
+    font-size: 50%;
+  }
+  .tentang-box .tentang-boxisi .tentang-boxisip h1 {
+    text-shadow: 1px 2px 1px black;
+  }
+}
