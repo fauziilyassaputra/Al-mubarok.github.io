@@ -97,7 +97,7 @@ header .hero-judul h1 {
 
 header .hero-judul p {
   font-size: 1.8rem;
-  font-weight: 200;
+  font-weight: 400;
   letter-spacing: 0.1rem;
   color: var(--coklat);
 }
@@ -239,7 +239,7 @@ header .hero-judul .cta:hover {
 .unggul-box .unggul-isi p {
   text-align: center;
   font-size: 1.2rem;
-  font-weight: 100;
+  font-weight: 300;
   color: var(--coklat);
 }
 
