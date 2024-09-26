@@ -97,7 +97,7 @@ header .hero-judul h1 {
 
 header .hero-judul p {
   font-size: 1.8rem;
-  font-weight: 400;
+  font-weight: 200;
   letter-spacing: 0.1rem;
   color: var(--coklat);
 }
@@ -239,7 +239,7 @@ header .hero-judul .cta:hover {
 .unggul-box .unggul-isi p {
   text-align: center;
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 100;
   color: var(--coklat);
 }
 
@@ -735,7 +735,7 @@ header .hero-judul .cta:hover {
 
   header .hero-judul p {
     font-size: 1.8rem;
-    font-weight: 200;
+    font-weight: 400;
     letter-spacing: 0.1rem;
     color: var(--coklat);
     margin: 1rem 0;
@@ -749,6 +749,7 @@ header .hero-judul .cta:hover {
     padding: 0.5rem 1.5rem;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   }
+
   .menu-box .menu-boxisi .menu-isi img {
     width: 35rem;
   }
@@ -766,7 +767,7 @@ header .hero-judul .cta:hover {
   .unggul-box .unggul-isi p {
     text-align: center;
     font-size: 1.2rem;
-    font-weight: 100;
+    font-weight: 400;
     color: var(--coklat);
     line-height: 1.5rem;
   }
@@ -833,7 +834,12 @@ header .hero-judul .cta:hover {
   html {
     font-size: 50%;
   }
+
   .tentang-box .tentang-boxisi .tentang-boxisip h1 {
     text-shadow: 1px 2px 1px black;
+  }
+
+  .hero-judul {
+    height: 25rem;
   }
 }
