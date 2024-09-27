@@ -179,7 +179,7 @@ header .hero-judul .cta:hover {
   font-size: 1.3rem;
   font-family: Georgia, "Times New Roman", Times, serif;
   display: block;
-  color: var(--orange);
+  color: var(--coklat);
   text-shadow: 1px 1px 1px black;
 }
 
@@ -187,7 +187,7 @@ header .hero-judul .cta:hover {
   font-size: 1rem;
   font-family: Georgia, "Times New Roman", Times, serif;
   display: block;
-  color: #fff;
+  color: var(--coklat);
 }
 
 .menu-box .menu-boxisi .menu-isi:hover .menu-isip {
@@ -549,18 +549,19 @@ header .hero-judul .cta:hover {
     transition: opacity 1s 1s;
   }
   .menu-box .menu-boxisi .menu-isip h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-family: Georgia, "Times New Roman", Times, serif;
     display: block;
-    color: var(--orange);
+    color: var(--coklat);
     text-shadow: 1px 1px 1px black;
+    letter-spacing: 0.2rem;
   }
 
   .menu-box .menu-boxisi .menu-isip p {
     font-size: 1rem;
     font-family: Georgia, "Times New Roman", Times, serif;
     display: block;
-    color: #fff;
+    color: var(--coklat);
   }
   .menu-box .menu-judul {
     min-height: 25vh;
@@ -838,6 +839,16 @@ header .hero-judul .cta:hover {
 
   .menu-box .menu-boxisi .menu-isi img {
     width: 35rem;
+  }
+  .menu-box .menu-boxisi .menu-isip h3 {
+    font-size: 1.5rem;
+
+    letter-spacing: 0.2rem;
+  }
+
+  .menu-box .menu-boxisi .menu-isip p {
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
   }
   .unggul-box .unggul-isi {
     width: 15rem;
