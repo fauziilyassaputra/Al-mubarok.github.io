@@ -389,7 +389,7 @@ header .hero-judul .cta:hover {
   min-height: 80vh;
   padding: 1rem 7% 1rem;
   /* background-color: var(--kuning); */
-  background: linear-gradient(25deg, var(--kuning), cornsilk 90%);
+  background: linear-gradient(180deg, var(--kuning) 50%, cornsilk);
 }
 
 .tentang-box .tentang-boxisi .tentang-boxisigambar {
