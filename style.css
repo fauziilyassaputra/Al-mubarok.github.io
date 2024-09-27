@@ -80,7 +80,8 @@ header {
   justify-content: space-around;
   align-items: center;
   min-height: 100vh;
-  background-color: var(--kuning);
+  /* background-color: var(--kuning); */
+  background: linear-gradient(-45deg, var(--kuning), cornsilk 75%);
 }
 
 header .hero-gambar {
@@ -387,7 +388,8 @@ header .hero-judul .cta:hover {
   align-items: center;
   min-height: 80vh;
   padding: 1rem 7% 1rem;
-  background-color: var(--kuning);
+  /* background-color: var(--kuning); */
+  background: linear-gradient(25deg, var(--kuning), cornsilk 90%);
 }
 
 .tentang-box .tentang-boxisi .tentang-boxisigambar {
